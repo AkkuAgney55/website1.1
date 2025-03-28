@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Birthday!</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Birthday!!</h1>
+        <button class="goToTableButton" onclick="goToBirthdaysThisMonthTable()">Go to Birthdays This Month</button>
+    </div>
+
+    <!-- Search bar -->
+    <input type="text" id="searchInput" oninput="searchPeople()" placeholder="Search by name">
+
+    <!-- Table displaying all people -->
+    <h2>Birthday Table!</h2>
+    <table id="allPeopleTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>DOB</th>
+            </tr>
+        </thead>
+        <tbody id="allPeopleList">
+            <!-- Add data manually here -->
+            <tr>
+                <td>ANSHAD N.P</td>
+                <td>05/03/2007</td>
+            </tr>
+            <tr>
+                <td>ASHIN K R</td>
+                <td>01/06/2006</td>
+            </tr>
+            <tr>
+                <td>JAGAN NATH K</td>
+                <td>13/08/2005</td>
+            </tr>
+            <tr>
+                <td>MOHAMMED RAIHAN P K</td>
+                <td>25/08/2006</td>
+            </tr>
+            <tr>
+                <td>MUHAMMED SAHAL P</td>
+                <td>03/10/2006</td>
+            </tr>
+            <tr>
+                <td>NEERAD ABHIMANYU P</td>
+                <td>12/09/2006</td>
+            </tr>
+            <tr>
+                <td>RIHAN PARVEEN</td>
+                <td>27/10/2006</td>
+            </tr>
+            <tr>
+                <td>ROSHAN M</td>
+                <td>13/12/2006</td>
+            </tr>
+            <tr>
+                <td>VISHNUJITH.P</td>
+                <td>12/02/2006</td>
+            </tr>
+            <tr>
+                <td>YADU KRISHNA K</td>
+                <td>17/05/2007</td>
+            </tr>
+            <tr>
+                <td>YAHYA .A.P</td>
+                <td>24/10/2006</td>
+            </tr>
+            <tr>
+                <td>YEDUNAND.C</td>
+                <td>19/03/2006</td>
+            </tr>
+            <tr>
+                <td>ANAGHA M</td>
+                <td>14/10/2005</td>
+            </tr>
+            <tr>
+                <td>FATHIMATHUL SAHALA M P</td>
+                <td>29/03/2006</td>
+            </tr>
+            <tr>
+                <td>MALAVIKA K R</td>
+                <td>23/02/2006</td>
+            </tr>
+            <tr>
+                <td>SANIGA SANTHOSH</td>
+                <td>19/05/2006</td>
+            </tr>
+            <tr>
+                <td>ABHIJITH C K</td>
+                <td>03/07/2006</td>
+            </tr>
+            <tr>
+                <td>ABHINAV K</td>
+                <td>13/09/2006</td>
+            </tr>
+            <tr>
+                <td>ADHWAIDH RAJEEVAN</td>
+                <td>15/01/2007</td>
+            </tr>
+            <tr>
+                <td>ADITH CHANDRAN .B</td>
+                <td>02/03/2005</td>
+            </tr>
+            <tr>
+                <td>ADITH P P</td>
+                <td>10/05/2006</td>
+            </tr>
+            <tr>
+                <td>AGNEY K</td>
+                <td>02/10/2005</td>
+            </tr>
+            <tr>
+                <td>ANANDHU K</td>
+                <td>14/01/2006</td>
+            </tr>
+            <tr>
+                <td>ANURANJ N</td>
+                <td>13/01/2006</td>
+            </tr>
+            <tr>
+                <td>AROMAL K</td>
+                <td>27/06/2006</td>
+            </tr>
+            <tr>
+                <td>ASHIN .K</td>
+                <td>06/08/2006</td>
+            </tr>
+            <tr>
+                <td>HRISHIKESH P</td>
+                <td>31/05/2006</td>
+            </tr>
+            <tr>
+                <td>HRITHWIK SUJITH</td>
+                <td>14/02/2006</td>
+            </tr>
+            <tr>
+                <td>MUHAMMAD IHAAN IBRAHIM</td>
+                <td>05/11/2006</td>
+            </tr>
+            <tr>
+                <td>MUHAMMED AJNAS.C.P</td>
+                <td>29/12/2006</td>
+            </tr>
+            <tr>
+                <td>MUHAMMED FARHAN M</td>
+                <td>24/09/2005</td>
+            </tr>
+            <tr>
+                <td>MUHAMMED RIHAN C V K</td>
+                <td>03/12/2006</td>
+            </tr>
+            <tr>
+                <td>MUHAMMED SAIFUDHEEN K N</td>
+                <td>25/12/2005</td>
+            </tr>
+            <tr>
+                <td>MUHAMMED SHIFAN K</td>
+                <td>02/02/2007</td>
+            </tr>
+            <tr>
+                <td>NIKHIL E V</td>
+                <td>03/06/2006</td>
+            </tr>
+            <tr>
+                <td>SANGEERTH M</td>
+                <td>02/08/2006</td>
+            </tr>
+            <tr>
+                <td>SIDHARTH. E.K</td>
+                <td>17/12/2005</td>
+            </tr>
+            <tr>
+                <td>SREELESH C</td>
+                <td>02/02/2006</td>
+            </tr>
+            <tr>
+                <td>SREENIDHI P K</td>
+                <td>10/06/2006</td>
+            </tr>
+            <tr>
+                <td>VARUN P</td>
+                <td>22/01/2006</td>
+            </tr>
+            <tr>
+                <td>VISHNU V</td>
+                <td>02/10/2006</td>
+            </tr>
+            <tr>
+                <td>ATHIRA MP</td>
+                <td>23/03/2006</td>
+            </tr>
+            <tr>
+                <td>DEVANGANA U</td>
+                <td>20/07/2006</td>
+            </tr>
+            <tr>
+                <td>HUDA BASHEER</td>
+                <td>22/08/2005</td>
+            </tr>
+            <tr>
+                <td>MAYOOGHA RAJESH</td>
+                <td>15/03/2006</td>
+            </tr>
+            <tr>
+                <td>SIYA SURESH K</td>
+                <td>26/09/2006</td>
+            </tr>
+            <tr>
+                <td>SREYA GIREESH</td>
+                <td>16/12/2006</td>
+            </tr>
+            <tr>
+                <td>GOUTHAM DEV .M</td>
+                <td>27/04/2006</td>
+            </tr>
+            <tr>
+                <td>NIVED KRISHNA K</td>
+                <td>13/11/2006</td>
+            </tr>
+            <tr>
+                <td>DIVYASREE. A.S</td>
+                <td>28/10/2005</td>
+            </tr>
+            <tr>
+                <td>NAYANA UNNI.C</td>
+                <td>01/08/2006</td>
+            </tr>
+            <tr>
+                <td>SREENANDA RAJU</td>
+                <td>17/07/2006</td>
+            </tr>
+            <tr>
+                <td>SREENANDA. K</td>
+                <td>28/02/2007</td>
+            </tr>
+            <tr>
+                <td>AMAN A C</td>
+                <td>26/07/2006</td>
+            </tr>
+            <tr>
+                <td>MUHAMMAD ASHRAF.K</td>
+                <td>18/03/2006</td>
+            </tr>
+            <tr>
+                <td>MUHAMMED JUHAIL.K</td>
+                <td>05/10/2006</td>
+            </tr>
+            <tr>
+                <td>MUVAFFAQUE C</td>
+                <td>27/02/2007</td>
+            </tr>
+            <tr>
+                <td>NAVAF V</td>
+                <td>13/03/2006</td>
+            </tr>
+            <tr>
+                <td>FATHIMATH RIZA .C</td>
+                <td>07/01/2005</td>
+            </tr>
+            <tr>
+                <td>FATHIMATHUL SHIFA. V</td>
+                <td>30/03/2007</td>
+            </tr>
+            <tr>
+                <td>T AMANA SAIFUDHEEN</td>
+                <td>31/01/2007</td>
+            </tr>
+
+            <!-- ... (your existing data) -->
+        </tbody>
+    </table>
+
+    <!-- Table displaying people for the current month -->
+    <h2>Birthdays This Month</h2>
+    <table id="birthdaysThisMonthTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>DOB</th>
+            </tr>
+        </thead>
+        <tbody id="birthdaysThisMonthList"></tbody>
+    </table>
+</body>
+</html>
